@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.contaner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 20vh;
+}
+
+h1 {
+  font-size: 64px;
+  color: firebrick;
+}
+
+main {
+  font-size: 24px;
+  color: blanchedalmond;
+}
