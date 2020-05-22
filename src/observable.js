@@ -1,8 +1,9 @@
 export function createObservable(subscribe) {
   return {
     subscribe,
-    pipe(operation) {
-      return operation(this);
+    pipe(...operations) {
+      if (!operations) return this;
+      return operations.reduce((res, op) => op(res), this);
     }
   };
 }
